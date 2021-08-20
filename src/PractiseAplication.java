@@ -17,10 +17,10 @@ public class PractiseAplication {
         num3 = input.nextInt();
 
         //Calculate total
-        int sum = num1 + num2 + num3;
-
-        //show the sum
-        System.out.println("La suma de los 3 números ingresados es: " + sum);
+        if (num1 == num2 || num2 == num3 || num1 == num3) {
+            System.out.println("Hay almenos 2 números repetidos");
+        } else {
+            System.out.println("No hay números repetidos");
+        }
     }
-
 }
