@@ -4,20 +4,23 @@ public class PractiseAplication {
     public static void main(String args[]) {
         //Keyboard
         Scanner input = new Scanner(System.in);
+        int num1,num2,num3;
 
-        //Enter your name
-        System.out.println("Ingrese su nombre");
-        String nombre = input.next();
+        //Enter the 3 numbers
+        System.out.println("Ingrese un número");
+        num1 = input.nextInt();
 
-        //Enter year of birth
-        System.out.println("Ingrese su año de nacimiento");
-        int año = input.nextInt();
+        System.out.println("Ingrese otro número");
+        num2 = input.nextInt();
 
-        //Calculate age
-        int edad = 2021 - año;
+        System.out.println("Ingrese un último número");
+        num3 = input.nextInt();
 
-        //show name and age
-        System.out.println("Su nombre es " + nombre + " y su edad es de " + edad + " años.");
+        //Calculate total
+        int sum = num1 + num2 + num3;
+
+        //show the sum
+        System.out.println("La suma de los 3 números ingresados es: " + sum);
     }
 
 }
