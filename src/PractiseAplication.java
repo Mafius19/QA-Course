@@ -4,13 +4,19 @@ public class PractiseAplication {
     public static void main(String args[]) {
         //Keyboard
         Scanner input = new Scanner(System.in);
-        int num = 1;
+        int num,i;
 
-        while (num > 0){
-            System.out.println("Ingrese un número");
-            num = input.nextInt();
-            System.out.println(num);
+        System.out.println("Ingrese un número");
+        num = input.nextInt();
+
+        if (num > 0) {
+            for (i = 1; i < num; i++) {
+                System.out.println(i);
+            }
+        } else {
+            for (i = 1; i > num; i--) {
+                System.out.println(i);
+            }
         }
-
     }
 }
