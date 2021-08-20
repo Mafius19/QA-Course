@@ -17,10 +17,10 @@ public class PractiseAplication {
         num3 = input.nextInt();
 
         //Calculate total
-        if (num1 == num2 || num2 == num3 || num1 == num3) {
-            System.out.println("Hay almenos 2 números repetidos");
+        if (num1 != num2 && num2 != num3 && num1 != num3) {
+            System.out.println("Todos los números son diferentes");
         } else {
-            System.out.println("No hay números repetidos");
+            System.out.println("Hay números repetidos");
         }
     }
 }
