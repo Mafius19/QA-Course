@@ -4,16 +4,12 @@ public class PractiseAplication {
     public static void main(String args[]) {
         //Keyboard
         Scanner input = new Scanner(System.in);
-        int num;
+        int num = 1;
 
-        //Enter the 3 numbers
-        System.out.println("Ingrese un número");
-        num = input.nextInt();
-
-        if (num > 0) {
-            System.out.println("El número ingresado es mayor a 0");
-        } else {
-            System.out.println("El número ingresado es menor o igual a 0");
+        while (num > 0){
+            System.out.println("Ingrese un número");
+            num = input.nextInt();
+            System.out.println(num);
         }
 
     }
