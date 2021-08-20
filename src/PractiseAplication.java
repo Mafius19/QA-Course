@@ -4,19 +4,24 @@ public class PractiseAplication {
     public static void main(String args[]) {
         //Keyboard
         Scanner input = new Scanner(System.in);
-        int num,i;
+        int num1,num2,mayor,menor,i;
 
         System.out.println("Ingrese un número");
-        num = input.nextInt();
+        num1 = input.nextInt();
 
-        if (num > 0) {
-            for (i = 1; i < num; i++) {
-                System.out.println(i);
-            }
+        System.out.println("Ingrese otro número");
+        num2 = input.nextInt();
+
+        if (num1 >= num2) {
+            menor = num2;
+            mayor = num1;
         } else {
-            for (i = 1; i > num; i--) {
-                System.out.println(i);
-            }
+            menor = num1;
+            mayor = num2;
+        }
+
+        for (i = menor; i < mayor; i++){
+            System.out.println(i);
         }
     }
 }
