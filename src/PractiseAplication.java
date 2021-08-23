@@ -11,8 +11,7 @@ public class PractiseAplication {
             System.out.println("Ingrese un número");
             num = input.nextInt();
             acc = acc + num;
-            System.out.println(acc);
+            System.out.println("La suma de los números ingresados hasta ahora es: " + acc);
         }
-
     }
 }
