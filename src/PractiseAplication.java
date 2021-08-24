@@ -9,10 +9,10 @@ public class PractiseAplication {
         int ingresados = 0;
         double promedio = 0;
 
-        while (num >= 0){
+        while (num != 0){
             System.out.println("Ingrese un número");
             num = input.nextInt();
-            if (num >= 0){
+            if (num != 0){
                 acc = acc + num;
                 ingresados++;
                 promedio = (double) acc / ingresados;
