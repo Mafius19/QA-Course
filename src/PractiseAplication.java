@@ -7,15 +7,17 @@ public class PractiseAplication {
         int num = 1;
         int acc = 0;
         int ingresados = 0;
-        double promedio;
+        double promedio = 0;
 
-        while (num != 0){
+        while (num >= 0){
             System.out.println("Ingrese un número");
             num = input.nextInt();
-            acc = acc + num;
-            ingresados++;
-            promedio = (double) acc / ingresados;
-            System.out.println("El promedio de los números ingresados es: " + promedio);
+            if (num >= 0){
+                acc = acc + num;
+                ingresados++;
+                promedio = (double) acc / ingresados;
+            }
         }
+        System.out.println("El promedio de los números ingresados es: " + promedio);
     }
 }
