@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //Práctico 3
 public class PractiseAplication {
     static double Pi = 3.14;
@@ -36,9 +38,14 @@ public class PractiseAplication {
         //Ejercicio 15
         System.out.println(sumitorialPar(10));
         //Ejercicio 16
-        tipoTriangulo(10,13,12);*/
+        tipoTriangulo(10,13,12);
         //Ejercicio 17
-        System.out.println(factorial(5));
+        System.out.println(factorial(5));*/
+        //Ejercicio 18
+        System.out.println(validarNumero("Ingrese un número",
+                "Error: Debe ingresar un número dentro del rango",
+                10,
+                100));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -154,7 +161,7 @@ public class PractiseAplication {
         } else if (ladoA != ladoB || ladoA != ladoC || ladoB != ladoC) {
             System.out.println("El triángulo es Escaleno");
         }
-    }*/
+    }
     //17 - Crear un método llamado factorial que reciba un número y retorne el factorial de
     // ese número. Ej. si el número recibido es 5, se deberá retornar el siguiente valor: 5*4*3*2*1.
     // Sugerencia: utilizar un acumulador.
@@ -164,5 +171,28 @@ public class PractiseAplication {
             acc = acc * i;
         }
         return acc;
+    }*/
+    //18 - Realizar un método llamado validarNumero, que recibe 4 parametros:
+    //Un mensaje para mostrar: mensaje
+    //Un mensaje de error: error
+    //Un entero llamado: mínimo
+    //Un entero llamado: máximo
+    //Se debe pedir el ingreso de números indicando el mensaje por parámetro para solicitar el número.
+    //En caso de que se ingrese un número fuera del rango, mostrar el mensaje de error y pedir que
+    //ingrese un número que se encuentre dentro del rango. El método debe retornar un entero
+    // que se encuentre dentro del rango comprendido entre el máximo y el mínimo.
+    public static int validarNumero(String mensaje, String error, int minimo, int maximo) {
+        //Keyboard
+        Scanner input = new Scanner(System.in);
+        int num = 999999999;
+        while (num <= minimo || num >= maximo) {
+            System.out.println(mensaje);
+            num = input.nextInt();
+            if (num >= minimo && num <= maximo) {
+                break;
+            }
+            System.out.println(error);
+        }
+        return num;
     }
 }
