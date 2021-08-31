@@ -1,6 +1,7 @@
 //Práctico 3
 public class PractiseAplication {
     static double Pi = 3.14;
+    static double IVA = 0.22;
     public static void main(String args[]) {
         /*//Ejercicio 1:
         int doble = calcularDoble(5);
@@ -20,9 +21,13 @@ public class PractiseAplication {
         //Ejercicio 8
         System.out.println(divisiblePor2(12));
         //Ejercicio 9
-        System.out.println(areaCirculo(5));*/
+        System.out.println(areaCirculo(5));
         //Ejercicio 10
         System.out.println(areaParalelogramo(10, 4));
+        //Ejercicio 11
+        convertirMoneda(25);*/
+        //Ejercicio 12
+        System.out.println(calcularIva(110450));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -86,10 +91,23 @@ public class PractiseAplication {
     // su área (radio^2)*PI (utilizar una variable estática para el valor de PI).
     public static double areaCirculo(double radio) {
         return Pi*Math.pow(radio, 2);
-    }*/
+    }
     //10 - Crear un método que permita recibir el alto y ancho de un paralelogramo tipo, y
     //retorne su área.
     public static double areaParalelogramo(double base, double altura) {
         return base*altura;
+    }
+    //11 - Crear un método que reciba un entero, y muestre en pantalla la cantidad de
+    //dólares y de euros que representa ese número
+    public static void convertirMoneda(int cantidad) {
+        System.out.println("La cantidad ingresada equivale a: " + cantidad + "$ dólares");
+        System.out.println("La cantidad ingresada equivale a: " + cantidad + "€ euros");
+
+    }*/
+    //12 - Realizar un método llamado calcularIva, que calcule el IVA (22%) dado un número float
+    // llamado sueldo, recibido por parámetro. Sugerencia: utilizar variables estáticas.
+    public static double calcularIva(float sueldo) {
+        return sueldo * IVA;
+
     }
 }
