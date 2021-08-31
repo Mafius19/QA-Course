@@ -34,9 +34,11 @@ public class PractiseAplication {
         //Ejercicio 14
         convertirAMillas(14);
         //Ejercicio 15
-        System.out.println(sumitorialPar(10));*/
+        System.out.println(sumitorialPar(10));
         //Ejercicio 16
-        tipoTriangulo(10,13,12);
+        tipoTriangulo(10,13,12);*/
+        //Ejercicio 17
+        System.out.println(factorial(5));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -141,7 +143,7 @@ public class PractiseAplication {
            sumaPares = sumaPares + i;
         }
         return sumaPares;
-    }*/
+    }
     //16 - Crear un método llamado tipoTriangulo, que dado 3 valores enteros recibidos por parámetro,
     // imprima en pantalla si es escaleno, si es equilátero o isósceles.
     public static void tipoTriangulo (int ladoA, int ladoB, int ladoC) {
@@ -152,5 +154,15 @@ public class PractiseAplication {
         } else if (ladoA != ladoB || ladoA != ladoC || ladoB != ladoC) {
             System.out.println("El triángulo es Escaleno");
         }
+    }*/
+    //17 - Crear un método llamado factorial que reciba un número y retorne el factorial de
+    // ese número. Ej. si el número recibido es 5, se deberá retornar el siguiente valor: 5*4*3*2*1.
+    // Sugerencia: utilizar un acumulador.
+    public static int factorial (int num) {
+        int acc = 1;
+        for (int i = 1; i <= num; i++) {
+            acc = acc * i;
+        }
+        return acc;
     }
 }
