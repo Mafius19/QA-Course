@@ -2,6 +2,7 @@
 public class PractiseAplication {
     static double Pi = 3.14;
     static double IVA = 0.22;
+
     public static void main(String args[]) {
         /*//Ejercicio 1:
         int doble = calcularDoble(5);
@@ -25,9 +26,11 @@ public class PractiseAplication {
         //Ejercicio 10
         System.out.println(areaParalelogramo(10, 4));
         //Ejercicio 11
-        convertirMoneda(25);*/
+        convertirMoneda(25);
         //Ejercicio 12
-        System.out.println(calcularIva(110450));
+        System.out.println(calcularIva(110450));*/
+        //Ejercicio 13
+        verficarRango(19, 10, 28);
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -103,11 +106,21 @@ public class PractiseAplication {
         System.out.println("La cantidad ingresada equivale a: " + cantidad + "$ dólares");
         System.out.println("La cantidad ingresada equivale a: " + cantidad + "€ euros");
 
-    }*/
+    }
     //12 - Realizar un método llamado calcularIva, que calcule el IVA (22%) dado un número float
     // llamado sueldo, recibido por parámetro. Sugerencia: utilizar variables estáticas.
     public static double calcularIva(float sueldo) {
         return sueldo * IVA;
 
+    }*/
+    //13 - Dado un número, un máximo y un mínimo (recibido por parámetro), retorne verdadero si el número
+    // está dentro del máximo y el mínimo. Si el número se encuentra dentro del max y min, el método debe
+    // mostrar “El número es válido” sino, se debe retornar, “El numero esta fuera de rango.”
+    public static void verficarRango( int num, int min, int max) {
+        if ( num >= min && num <= max) {
+            System.out.println("El número es válido");
+        } else {
+            System.out.println("El número esta fuera de rango");
+        }
     }
 }
