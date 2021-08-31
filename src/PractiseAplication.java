@@ -52,9 +52,11 @@ public class PractiseAplication {
         System.out.println(calcularSuma(12, 18));
         System.out.println(calcularResta(120, 18));
         System.out.println(calcularDivision(1220, 156));
-        System.out.println(calcularMutiplicacion(25050, 187));*/
+        System.out.println(calcularMutiplicacion(25050, 187));
         //Ejercicio 21
-        calcularPromedio();
+        calcularPromedio();*/
+        //Ejercicio 22
+        System.out.println(esMayorDeEdad(18));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -226,7 +228,7 @@ public class PractiseAplication {
     }
     public static float calcularMutiplicacion(int num1, int num2) {
         return num1 * num2;
-    }*/
+    }
     //21 - Realizar un método llamado calcularPromedio, que solicite el ingreso de números hasta que
     //se ingrese 0, y que calcule el promedio de los mismos. Se debe utilizar el método ingresarNumero.
     public static void calcularPromedio() {
@@ -248,5 +250,14 @@ public class PractiseAplication {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese un número");
         return input.nextInt();
+    }*/
+    //22 - Crear un método llamado esMayorDeEdad, que retorne verdadero si y sólo si,
+    //el valor recibido por parámetro es mayor a 18.
+    public static boolean esMayorDeEdad(int num) {
+        if (num >= 18) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
