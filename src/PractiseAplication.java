@@ -1,19 +1,26 @@
 //Práctico 3
 public class PractiseAplication {
+    static double Pi = 3.14;
     public static void main(String args[]) {
-        /*Ejercicio 1:
+        /*//Ejercicio 1:
         int doble = calcularDoble(5);
-        System.out.println((doble));*/
-        /*Ejercicio 2:
-        compararCon20(25);*/
-        /*Ejercicio 3
-        System.out.println(multiplicar(3,4));*/
-        /*Ejercicio 4
-        System.out.println(sumar(5,9));*/
-        /*Ejercicio 5
-        System.out.println(multiplicar(5,9.3));*/
+        System.out.println((doble));
+        //Ejercicio 2:
+        compararCon20(25);
+        //Ejercicio 3
+        System.out.println(multiplicar(3,4));
+        //Ejercicio 4
+        System.out.println(sumar(5,9));
+        //Ejercicio 5
+        System.out.println(multiplicar(5,9.3));
         //Ejercicio 6
         determinarMayor(12,11);
+        //Ejercicio 7
+        sumitorial(12);
+        //Ejercicio 8
+        System.out.println(divisiblePor2(12));*/
+        //Ejercicio 9
+        System.out.println(areaCirculo(5));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -39,8 +46,8 @@ public class PractiseAplication {
     //5 - Método que reciba un número entero y un número double, y retorne su multiplicación
     public static double multiplicar(int x, double y) {
         return x*y;
-    }*/
-    // 6 - Realizar un método que reciba dos números y retorne el mayor ambos.
+    }
+    //6 - Realizar un método que reciba dos números y retorne el mayor ambos.
     public static void determinarMayor(int x, int y) {
         if (x > y) {
             System.out.println("El mayor es: " + x);
@@ -49,5 +56,33 @@ public class PractiseAplication {
         } else {
             System.out.println("Ambos números son iguales");
         }
+    }
+    //7 - Crear un método que reciba un número entero n, y muestre en pantalla la suma desde 1
+    // hasta ese número n. Ej. Si n es 4, se debe mostrar en pantalla 10.
+    public static void sumitorial(int num) {
+        int sumitorial = 0;
+        if (num > 0) {
+            for (int i = 1; i <= num; i++) {
+                sumitorial = sumitorial + i;
+            }
+        } else {
+            System.out.println("Debe ingresar un entero positivo");
+        }
+        System.out.println("La suma desde 1 hasta " + num + " es de: " + sumitorial);
+
+    }
+    //8 - Crear un método que retorne verdadero si y sólo si el número es par,
+    // de lo contrario, debe retornar falso.
+    public static boolean divisiblePor2(int num) {
+        if (num % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }*/
+    //9 - Crear un método que permita reciba el radio de un círculo, y retorne
+    // su área (radio^2)*PI (utilizar una variable estática para el valor de PI).
+    public static double areaCirculo(double radio) {
+        return Pi*Math.pow(radio, 2);
     }
 }
