@@ -30,9 +30,11 @@ public class PractiseAplication {
         //Ejercicio 12
         System.out.println(calcularIva(110450));
         //Ejercicio 13
-        verficarRango(19, 10, 28);*/
+        verficarRango(19, 10, 28);
         //Ejercicio 14
-        convertirAMillas(14);
+        convertirAMillas(14);*/
+        //Ejercicio 15
+        System.out.println(sumitorialPar(10));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -124,10 +126,18 @@ public class PractiseAplication {
         } else {
             System.out.println("El número esta fuera de rango");
         }
-    }*/
+    }
     //14 - Método llamado convertirAMillas, que reciba un entero llamado kilómetros y retorne
     // el equivalente a las millas. Se debe imprimir el valor en millas en pantalla. (1 milla = 1.6 kms).
     public static void convertirAMillas(int kilometros) {
         System.out.println("El valor en millas es de: " + kilometros/1.6 + " mi");
+    }*/
+    //15 - Crear un método que retorne la suma de los números pares entre 1 y n, siendo n un parámetro.
+    public static int sumitorialPar( int num) {
+        int sumaPares = 0;
+        for (int i = 2; i <= num; i=i+2) {
+           sumaPares = sumaPares + i;
+        }
+        return sumaPares;
     }
 }
