@@ -45,9 +45,16 @@ public class PractiseAplication {
         System.out.println(validarNumero("Ingrese un número",
                 "Error: Debe ingresar un número dentro del rango",
                 10,
-                100));*/
+                100));
         //Ejercicio 19
         System.out.println(valorAbsoluto(-100));
+        //Ejercicio 20
+        System.out.println(calcularSuma(12, 18));
+        System.out.println(calcularResta(120, 18));
+        System.out.println(calcularDivision(1220, 156));
+        System.out.println(calcularMutiplicacion(25050, 187));*/
+        //Ejercicio 21
+        calcularPromedio();
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -196,7 +203,7 @@ public class PractiseAplication {
             System.out.println(error);
         }
         return num;
-    }*/
+    }
     //19 - Crear un método llamado valorAbsoluto, que reciba un número y retorne
     //el valor absoluto del mismo. Ej. si se recibe un -4, el método debe retornar 4.
     public static int valorAbsoluto(int num) {
@@ -204,5 +211,42 @@ public class PractiseAplication {
             return num*-1;
         }
         return num;
+    }
+    //20 - Realizar 4 métodos que reciba dos parámetros cada uno y retornen un número float.
+    //Los métodos tendrán los siguientes nombres: calcularSuma, calcularResta, calcularDivision,
+    //calcularMutiplicacion.
+    public static float calcularSuma(int num1, int num2) {
+        return num1 + num2;
+    }
+    public static float calcularResta(int num1, int num2) {
+        return num1 - num2;
+    }
+    public static float calcularDivision(int num1, int num2) {
+        return num1 / num2;
+    }
+    public static float calcularMutiplicacion(int num1, int num2) {
+        return num1 * num2;
+    }*/
+    //21 - Realizar un método llamado calcularPromedio, que solicite el ingreso de números hasta que
+    //se ingrese 0, y que calcule el promedio de los mismos. Se debe utilizar el método ingresarNumero.
+    public static void calcularPromedio() {
+        int num = 1;
+        int acc = 0;
+        int cantIngresados = 0;
+        double promedio;
+        while (num != 0){
+            num = ingresarNumero();
+            acc = acc + num;
+            if (num != 0) {
+                cantIngresados++;
+            }
+            promedio = (double) acc / cantIngresados;
+            System.out.println("El promedio de los números ingresados es: " + promedio);
+        }
+    }
+    public static int ingresarNumero() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ingrese un número");
+        return input.nextInt();
     }
 }
