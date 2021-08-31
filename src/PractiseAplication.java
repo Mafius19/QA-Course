@@ -6,9 +6,12 @@ public class PractiseAplication {
         System.out.println((doble));*/
         /*Ejercicio 2:
         compararCon20(25);*/
-        //Ejercicio 3
-        System.out.println(multiplicar(3,4));
+        /*Ejercicio 3
+        System.out.println(multiplicar(3,4));*/
+        //Ejercicio 4
+        System.out.println(sumar(5,9));
     }
+    /*
     //1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
         return num*2;
@@ -22,9 +25,12 @@ public class PractiseAplication {
             System.out.println("No es mayor a 20");
         }
     }
-
     //3 - Método que reciba dos enteros y retorne la multiplicación de la misma.
     public static int multiplicar(int x, int y) {
         return x*y;
+    }*/
+    //4 - Método que reciba dos números y retorne su suma.
+    public static int sumar(int x, int y) {
+        return x+y;
     }
 }
