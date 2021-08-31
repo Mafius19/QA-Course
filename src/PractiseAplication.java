@@ -54,9 +54,11 @@ public class PractiseAplication {
         System.out.println(calcularDivision(1220, 156));
         System.out.println(calcularMutiplicacion(25050, 187));
         //Ejercicio 21
-        calcularPromedio();*/
+        calcularPromedio();
         //Ejercicio 22
-        System.out.println(esMayorDeEdad(18));
+        System.out.println(esMayorDeEdad(18));*/
+        //Ejercicio 23
+        System.out.println(esMayor(12, 10));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -250,11 +252,20 @@ public class PractiseAplication {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese un número");
         return input.nextInt();
-    }*/
+    }
     //22 - Crear un método llamado esMayorDeEdad, que retorne verdadero si y sólo si,
     //el valor recibido por parámetro es mayor a 18.
     public static boolean esMayorDeEdad(int num) {
         if (num >= 18) {
+            return true;
+        } else {
+            return false;
+        }
+    }*/
+    //23 - Método que reciba dos números y retorne verdadero si el primer número es mayor
+    //que el segundo. De lo contrario, debe retornar falso.
+    public static boolean esMayor(int num1, int num2) {
+        if (num1 > num2) {
             return true;
         } else {
             return false;
