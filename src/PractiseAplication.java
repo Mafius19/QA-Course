@@ -40,12 +40,14 @@ public class PractiseAplication {
         //Ejercicio 16
         tipoTriangulo(10,13,12);
         //Ejercicio 17
-        System.out.println(factorial(5));*/
+        System.out.println(factorial(5));
         //Ejercicio 18
         System.out.println(validarNumero("Ingrese un número",
                 "Error: Debe ingresar un número dentro del rango",
                 10,
-                100));
+                100));*/
+        //Ejercicio 19
+        System.out.println(valorAbsoluto(-100));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -171,7 +173,7 @@ public class PractiseAplication {
             acc = acc * i;
         }
         return acc;
-    }*/
+    }
     //18 - Realizar un método llamado validarNumero, que recibe 4 parametros:
     //Un mensaje para mostrar: mensaje
     //Un mensaje de error: error
@@ -192,6 +194,14 @@ public class PractiseAplication {
                 break;
             }
             System.out.println(error);
+        }
+        return num;
+    }*/
+    //19 - Crear un método llamado valorAbsoluto, que reciba un número y retorne
+    //el valor absoluto del mismo. Ej. si se recibe un -4, el método debe retornar 4.
+    public static int valorAbsoluto(int num) {
+        if (num < 0) {
+            return num*-1;
         }
         return num;
     }
