@@ -28,9 +28,11 @@ public class PractiseAplication {
         //Ejercicio 11
         convertirMoneda(25);
         //Ejercicio 12
-        System.out.println(calcularIva(110450));*/
+        System.out.println(calcularIva(110450));
         //Ejercicio 13
-        verficarRango(19, 10, 28);
+        verficarRango(19, 10, 28);*/
+        //Ejercicio 14
+        convertirAMillas(14);
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -112,7 +114,7 @@ public class PractiseAplication {
     public static double calcularIva(float sueldo) {
         return sueldo * IVA;
 
-    }*/
+    }
     //13 - Dado un número, un máximo y un mínimo (recibido por parámetro), retorne verdadero si el número
     // está dentro del máximo y el mínimo. Si el número se encuentra dentro del max y min, el método debe
     // mostrar “El número es válido” sino, se debe retornar, “El numero esta fuera de rango.”
@@ -122,5 +124,10 @@ public class PractiseAplication {
         } else {
             System.out.println("El número esta fuera de rango");
         }
+    }*/
+    //14 - Método llamado convertirAMillas, que reciba un entero llamado kilómetros y retorne
+    // el equivalente a las millas. Se debe imprimir el valor en millas en pantalla. (1 milla = 1.6 kms).
+    public static void convertirAMillas(int kilometros) {
+        System.out.println("El valor en millas es de: " + kilometros/1.6 + " mi");
     }
 }
