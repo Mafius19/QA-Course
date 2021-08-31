@@ -32,9 +32,11 @@ public class PractiseAplication {
         //Ejercicio 13
         verficarRango(19, 10, 28);
         //Ejercicio 14
-        convertirAMillas(14);*/
+        convertirAMillas(14);
         //Ejercicio 15
-        System.out.println(sumitorialPar(10));
+        System.out.println(sumitorialPar(10));*/
+        //Ejercicio 16
+        tipoTriangulo(10,13,12);
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -131,7 +133,7 @@ public class PractiseAplication {
     // el equivalente a las millas. Se debe imprimir el valor en millas en pantalla. (1 milla = 1.6 kms).
     public static void convertirAMillas(int kilometros) {
         System.out.println("El valor en millas es de: " + kilometros/1.6 + " mi");
-    }*/
+    }
     //15 - Crear un método que retorne la suma de los números pares entre 1 y n, siendo n un parámetro.
     public static int sumitorialPar( int num) {
         int sumaPares = 0;
@@ -139,5 +141,16 @@ public class PractiseAplication {
            sumaPares = sumaPares + i;
         }
         return sumaPares;
+    }*/
+    //16 - Crear un método llamado tipoTriangulo, que dado 3 valores enteros recibidos por parámetro,
+    // imprima en pantalla si es escaleno, si es equilátero o isósceles.
+    public static void tipoTriangulo (int ladoA, int ladoB, int ladoC) {
+        if (ladoA == ladoB && ladoB == ladoC) {
+            System.out.println("El triángulo es Equilatero");
+        } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+            System.out.println("El triángulo es Isoceles");
+        } else if (ladoA != ladoB || ladoA != ladoC || ladoB != ladoC) {
+            System.out.println("El triángulo es Escaleno");
+        }
     }
 }
