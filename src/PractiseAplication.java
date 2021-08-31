@@ -4,8 +4,10 @@ public class PractiseAplication {
         /*Ejercicio 1:
         int doble = calcularDoble(5);
         System.out.println((doble));*/
-        //Ejercicio 2:
-        compararCon20(25);
+        /*Ejercicio 2:
+        compararCon20(25);*/
+        //Ejercicio 3
+        System.out.println(multiplicar(3,4));
     }
     //1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -19,5 +21,10 @@ public class PractiseAplication {
         } else {
             System.out.println("No es mayor a 20");
         }
+    }
+
+    //3 - Método que reciba dos enteros y retorne la multiplicación de la misma.
+    public static int multiplicar(int x, int y) {
+        return x*y;
     }
 }
