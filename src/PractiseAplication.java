@@ -1,4 +1,4 @@
-//Practico 3
+//Práctico 3
 public class PractiseAplication {
     public static void main(String args[]) {
         /*Ejercicio 1:
@@ -8,11 +8,14 @@ public class PractiseAplication {
         compararCon20(25);*/
         /*Ejercicio 3
         System.out.println(multiplicar(3,4));*/
-        //Ejercicio 4
-        System.out.println(sumar(5,9));
+        /*Ejercicio 4
+        System.out.println(sumar(5,9));*/
+        /*Ejercicio 5
+        System.out.println(multiplicar(5,9.3));*/
+        //Ejercicio 6
+        determinarMayor(12,11);
     }
-    /*
-    //1 - Escribir un método que reciba un número y retorne su doble
+    /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
         return num*2;
     }
@@ -28,9 +31,23 @@ public class PractiseAplication {
     //3 - Método que reciba dos enteros y retorne la multiplicación de la misma.
     public static int multiplicar(int x, int y) {
         return x*y;
-    }*/
+    }
     //4 - Método que reciba dos números y retorne su suma.
     public static int sumar(int x, int y) {
         return x+y;
+    }
+    //5 - Método que reciba un número entero y un número double, y retorne su multiplicación
+    public static double multiplicar(int x, double y) {
+        return x*y;
+    }*/
+    // 6 - Realizar un método que reciba dos números y retorne el mayor ambos.
+    public static void determinarMayor(int x, int y) {
+        if (x > y) {
+            System.out.println("El mayor es: " + x);
+        } else if(y > x){
+            System.out.println("El mayor es: " + y);
+        } else {
+            System.out.println("Ambos números son iguales");
+        }
     }
 }
