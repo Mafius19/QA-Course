@@ -18,9 +18,11 @@ public class PractiseAplication {
         //Ejercicio 7
         sumitorial(12);
         //Ejercicio 8
-        System.out.println(divisiblePor2(12));*/
+        System.out.println(divisiblePor2(12));
         //Ejercicio 9
-        System.out.println(areaCirculo(5));
+        System.out.println(areaCirculo(5));*/
+        //Ejercicio 10
+        System.out.println(areaParalelogramo(10, 4));
     }
     /*//1 - Escribir un método que reciba un número y retorne su doble
     public static int calcularDoble(int num) {
@@ -79,10 +81,15 @@ public class PractiseAplication {
         } else {
             return false;
         }
-    }*/
+    }
     //9 - Crear un método que permita reciba el radio de un círculo, y retorne
     // su área (radio^2)*PI (utilizar una variable estática para el valor de PI).
     public static double areaCirculo(double radio) {
         return Pi*Math.pow(radio, 2);
+    }*/
+    //10 - Crear un método que permita recibir el alto y ancho de un paralelogramo tipo, y
+    //retorne su área.
+    public static double areaParalelogramo(double base, double altura) {
+        return base*altura;
     }
 }
